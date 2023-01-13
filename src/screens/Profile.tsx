@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react';
 import {Platform, Linking} from 'react-native';
-import {Ionicons} from '@expo/vector-icons';
+import Icon from 'react-native-vector-icons/Ionicons';
 import {useNavigation} from '@react-navigation/core';
 
 import {Block, Button, Image, Text} from '../components/';
@@ -108,7 +108,7 @@ const Profile = () => {
                   color="rgba(255,255,255,0.2)"
                   outlined={String(colors.white)}
                   onPress={() => handleSocialLink('twitter')}>
-                  <Ionicons
+                  <Icon
                     size={18}
                     name="logo-twitter"
                     color={colors.white}
@@ -120,7 +120,7 @@ const Profile = () => {
                   color="rgba(255,255,255,0.2)"
                   outlined={String(colors.white)}
                   onPress={() => handleSocialLink('dribbble')}>
-                  <Ionicons
+                  <Icon
                     size={18}
                     name="logo-dribbble"
                     color={colors.white}

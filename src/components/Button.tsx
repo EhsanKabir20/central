@@ -7,7 +7,7 @@ import {
   Platform,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Ionicons } from '@expo/vector-icons';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import useTheme from '../hooks/useTheme';
 import { IButtonProps } from '../constants/types';
@@ -241,7 +241,7 @@ const Button = ({
         onPress={handlePress}
         {...props}
         style={buttonStyles}>
-        <Ionicons
+        <Icon
           name={socialIcon}
           size={sizes.socialIconSize}
           color={colors.white}
