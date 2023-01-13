@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Platform, StatusBar, Text } from 'react-native';
-import { useFonts } from 'expo-font';
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 
 import Menu from './Menu';
@@ -17,19 +16,6 @@ export default () => {
       StatusBar.setBarStyle('default');
     };
   }, [isDark]);
-
-  // load custom fonts
-  const [fontsLoaded] = useFonts({
-    'OpenSans-Light': theme.assets.OpenSansLight,
-    'OpenSans-Regular': theme.assets.OpenSansRegular,
-    'OpenSans-SemiBold': theme.assets.OpenSansSemiBold,
-    'OpenSans-ExtraBold': theme.assets.OpenSansExtraBold,
-    'OpenSans-Bold': theme.assets.OpenSansBold,
-  });
-
-  if (!fontsLoaded) {
-    return <Text>Loading</Text>;
-  }
 
   const navigationTheme = {
     ...DefaultTheme,
