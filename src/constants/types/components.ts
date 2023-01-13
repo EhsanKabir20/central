@@ -16,7 +16,6 @@ import {
   ViewStyle,
 } from 'react-native';
 import {BlurProps} from 'expo-blur';
-import LinearGradient from 'react-native-linear-gradient';
 import {ISpacing, ITheme} from './theme';
 
 /**
@@ -103,9 +102,9 @@ export interface IBlockProps
   color?: ViewStyle['backgroundColor'];
   /**
    * Renders LinearGradient component, colors
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  gradient?: string[];
+  gradient?: (string | number)[];
   /**
    * Renders a backgroundColor directly from the colors.primary value
    * @see https://reactnative.dev/docs/view-style-props#backgroundcolor
@@ -229,14 +228,14 @@ export interface IBlockProps
   bottom?: ViewStyle['bottom'];
   /**
    * Renders LinearGradient start points
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  start?: [number, number];
+  start?: { x: number; y: number };
   /**
    * Renders LinearGradient end points
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  end?: [number, number];
+  end?: { x: number; y: number };
 }
 
 /**
@@ -281,9 +280,9 @@ export interface IButtonProps extends TouchableOpacityProps, ISpacing {
   color?: ViewStyle['backgroundColor'];
   /**
    * Renders LinearGradient component, colors
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  gradient?: string[];
+  gradient?: (string | number)[];
   /**
    * Renders a backgroundColor directly from the colors.primary value
    * @see https://reactnative.dev/docs/view-style-props#backgroundcolor
@@ -723,7 +722,7 @@ export interface ITextProps extends TextProps, ISpacing {
   center?: boolean;
   /**
    * Renders LinearGradient component, colors
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
   gradient?: string[];
   /**
@@ -813,14 +812,14 @@ export interface ITextProps extends TextProps, ISpacing {
   semibold?: boolean;
   /**
    * Renders LinearGradient start points
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  start?: [number, number];
+  start?: { x: number; y: number };
   /**
    * Renders LinearGradient end points
-   * @see https://docs.expo.io/versions/latest/sdk/linear-gradient/#props
+   * @see https://github.com/react-native-linear-gradient/react-native-linear-gradient/blob/master/index.d.ts
    */
-  end?: [number, number];
+  end?: { x: number; y: number };
   /**
    * Renders a Text with predefined fontSize from theme sizes.h1
    * @see https://reactnative.dev/docs/text-style-props#fontsize

@@ -201,8 +201,8 @@ const Block = (props: IBlockProps) => {
         {...blockID}
         colors={gradient}
         style={blockStyles}
-        end={end || [1, 0]}
-        start={start || [0, 0]}
+        end={end || { x: 1, y: 0 }}
+        start={start || { x: 0, y: 0 }}
         {...rest}>
         {children}
       </LinearGradient>

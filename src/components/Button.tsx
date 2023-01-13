@@ -217,9 +217,9 @@ const Button = ({
         style={buttonStyles}>
         <LinearGradient
           style={gradientStyles}
-          colors={gradient}
-          start={[0, 1]}
-          end={[1, 0]}>
+          colors={gradient}          
+          start={{ x: 0, y: 1 }}
+          end={{ x: 1, y: 0 }}>          
           {children}
         </LinearGradient>
       </TouchableOpacity>
