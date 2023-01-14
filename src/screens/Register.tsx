@@ -158,8 +158,8 @@ const Register = () => {
                   flex={0}
                   height={1}
                   width="50%"
-                  end={[1, 0]}
-                  start={[0, 1]}
+                  end={{ x: 1, y: 0 }}
+                  start={{ x: 0, y: 1 }}
                   gradient={gradients.divider}
                 />
                 <Text center marginHorizontal={sizes.s}>
@@ -169,8 +169,8 @@ const Register = () => {
                   flex={0}
                   height={1}
                   width="50%"
-                  end={[0, 1]}
-                  start={[1, 0]}
+                  end={{ x: 0, y: 1 }}
+                  start={{ x: 1, y: 0 }}
                   gradient={gradients.divider}
                 />
               </Block>

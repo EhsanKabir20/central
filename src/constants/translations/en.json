@@ -50,7 +50,7 @@
   },
   "app": {
     "name": "Central",
-    "fullname": "Central",
+    "fullname": "Central App",
     "native": "React Native",
     "link": "minasu.com"
   },
@@ -105,7 +105,7 @@
     "aboutMe": "About me"
   },
   "pro": {
-    "title": "Central",
+    "title": "More",
     "alert": "This feature is available in PRO version",
     "components": "• {{count} Components (Buttons, Inputs, Cards, etc)",
     "screens": "• {{count} Screens (Shopping, Notifications, Chat, etc)",

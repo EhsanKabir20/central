@@ -16,8 +16,6 @@
     "@react-navigation/drawer": "5.12.5",
     "@react-navigation/native": "5.9.4",
     "@react-navigation/stack": "5.14.5",
-    "expo-blur": "11.1.0",
-    "expo-localization": "13.0.0",
     "i18n-js": "3.8.0",
     "jest-expo": "^47.0.1",
     "react": "18.1.0",
