@@ -111,11 +111,11 @@ const Register = () => {
             <Block
               blur
               flex={0}
-              intensity={90}
+              blurAmount={90}
               radius={sizes.sm}
               overflow="hidden"
               justify="space-evenly"
-              tint={colors.blurTint}
+              blurType={colors.blurType}
               paddingVertical={sizes.sm}>
               <Text p semibold center>
                 {t('register.subtitle')}

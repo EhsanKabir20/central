@@ -142,10 +142,10 @@ const Profile = () => {
               row
               blur
               flex={0}
-              intensity={100}
+              blurAmount={100}
               radius={sizes.sm}
               overflow="hidden"
-              tint={colors.blurTint}
+              blurType={colors.blurType}
               justify="space-evenly"
               paddingVertical={sizes.sm}
               renderToHardwareTextureAndroid>

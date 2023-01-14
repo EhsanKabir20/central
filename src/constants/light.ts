@@ -69,8 +69,8 @@ export const COLORS: ThemeColors = {
   /** icon tint color */
   icon: '#8392AB',
 
-  /** blur tint color */
-  blurTint: 'light',
+  /** blur blurType */
+  blurType: 'light',
 
   /** product link color */
   link: '#CB0C9F',

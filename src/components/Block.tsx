@@ -7,7 +7,7 @@ import {
   View,
   ViewStyle,
 } from 'react-native';
-import {BlurView} from 'expo-blur';
+import { BlurView } from "@react-native-community/blur";
 import LinearGradient from 'react-native-linear-gradient';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 
@@ -62,8 +62,8 @@ const Block = (props: IBlockProps) => {
     flex = 1,
     wrap,
     blur,
-    intensity,
-    tint,
+    blurAmount,
+    blurType,
     position,
     right,
     left,
@@ -213,8 +213,8 @@ const Block = (props: IBlockProps) => {
     return (
       <BlurView
         {...blockID}
-        tint={tint}
-        intensity={intensity}
+        blurType={blurType}
+        blurAmount={blurAmount}
         style={blockStyles}>
         {children}
       </BlurView>

@@ -103,7 +103,7 @@ export interface ThemeColors {
   twitter: ColorValue;
   dribbble: ColorValue;
   icon: ColorValue;
-  blurTint: 'light' | 'dark' | 'default';
+  blurType: 'dark' | 'light' | 'xlight';
   link: ColorValue;
 }
 

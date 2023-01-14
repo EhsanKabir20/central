@@ -15,7 +15,6 @@ import {
   ViewProps,
   ViewStyle,
 } from 'react-native';
-import {BlurProps} from 'expo-blur';
 import {ISpacing, ITheme} from './theme';
 
 /**
@@ -192,15 +191,15 @@ export interface IBlockProps
    */
   blur?: boolean;
   /**
-   * BlueView intensity, default: 50, values accepted: 1 to 100
-   * @see https://docs.expo.io/versions/latest/sdk/blur-view/#intensity
+   * BlueView blurAmount, default: 10, values accepted: 1 to 100
+   * @see https://github.com/Kureev/react-native-blur/blob/master/src/components/BlurView.android.tsx
    */
-  intensity?: BlurProps['intensity'];
+  blurAmount?: number;
   /**
-   * BlueView tint color, default: 'default', values accepted: 'light', 'dark', 'default'
-   * @see https://docs.expo.io/versions/latest/sdk/blur-view/#blurtint
+   * BlueView blurType color, values accepted: 'light', 'dark', 'default'
+   * @see https://github.com/Kureev/react-native-blur/blob/master/src/components/BlurView.android.tsx
    */
-  tint?: BlurProps['tint'];
+  blurType?: string;
   /**
    * Renders the View position
    * @see https://reactnative.dev/docs/layout-props#position
