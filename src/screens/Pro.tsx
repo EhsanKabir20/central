@@ -60,7 +60,7 @@ const Pro = () => {
             gradient={gradients.primary}
             onPress={() =>
               handleWebLink(
-                'https://www.creative-tim.com/product/soft-ui-pro-react-native',
+                'http://www.minasu.com/',
               )
             }>
             <Text white bold transform="uppercase">
